@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<%- include('../partials/header'); %>
+
+
+  <body>
+<%- include('../partials/nav'); %>
+      <div class="container">
+        <h1>Create Bird</h1>
+
+        <form method="POST" action="/bird-submit">
+          <input type="text" name="species" placeholder="Species"/>
+          <br>
+          <input type="text" name="nickname" placeholder="Nickname"/>
+          <br>
+          <input type="text" name="status" placeholder="Status"/>
+          <br>
+          <input type="submit" value="Create Bird"/>
+        </form>
+
+      </div>
+
+    <%- include('../partials/scripts'); %>
+  </body>
+</html>
+
